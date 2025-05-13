@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--?nom:Rezouali-->
+<!--?prenom:Imane-->
+<!--?groupe:B4--> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>generation des cartes etudiant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Test TP 2 — DAWEB</h1>
+  <hr>
+    <form id="form">
+    <label for="nom">Nom:</label>
+    <input type="text" id="nom" name="nom" required><br>
+  
+    <label for="prenom">Prénom:</label>
+    <input type="text" id="prenom" name="prenom" required><br>
+  
+    <label for="date-naissance">Date de naissance:</label>
+    <input type="date" id="date-naissance" name="date-naissance" required><br>
+  
+    <label for="lieu-naissance">Lieu de naissance:</label>
+    <select id="lieu-naissance" name="lieu-naissance" required>
+      <option value="">Choisir</option>
+      <option value="Bejaia">Bejaia</option>
+      <option value="Tizi Ouzou">Tizi Ouzou</option>
+    </select><br>
+  
+    <label for="uni">Université :</label>
+    <select id="uni" name="universite" required>
+      <option value="">Choisir</option>
+      <option value="UAMB">Université de Béjaïa (UAMB)</option>
+      <option value="UMMTO">Université de Tizi Ouzou (UMMTO)</option>
+    </select><br>
+  
+    <label for="filiere">Filière :</label>
+    <select id="filiere" name="filiere">
+    </select><br>
+
+    <button type="submit">Générer ma carte</button>
+    <button type="reset">Réinitialiser</button>
+    <!--* il y a trois type de button -->
+    <!--* submit pour la soumission du formulaire (sends les données à traiter par JavaScript ou serveur)-->
+    <!--*reset pour réinitialiser tous les champs du formulaire-->
+    <!--*button ne fait rien par défaut (il attend qu’un script lui donne un comportement)-->
+    <!--*so on precise pas le type , le navigateur va le considerer comme sublit button -->
+</form>
+
+<section id="carte-container" style="display: none;">
+  <img id="logo-uni" />
+  <h3 id="titre-carte"></h3>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

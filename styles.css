@@ -1,0 +1,67 @@
+
+body {
+    background: none;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+#carte-container{
+    max-width: 700px; 
+    height:400px;
+    border-radius: 20px; 
+    padding: 40px 30px; 
+    margin: 0 auto; 
+    box-shadow: 0 20px 16px 12px rgba(0, 0, 0, 0.2);
+    color: white;
+   
+}
+
+
+.interne {
+    background: linear-gradient(135deg, #9011ff, #de28fa); 
+}
+
+.externe {
+    background: linear-gradient(135deg, #1565c0, #7fe9f9); 
+}
+
+.the-black-thing {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 20px -30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.university-logo {
+    display: block;
+    margin: 0 auto 10px;
+    height: 80px; 
+}
+
+
+.university-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.carte p {
+    margin: 2px;
+    font-size: 19px;
+    line-height: 1;
+}
+
+.carte p::before {
+    content: "• ";
+    font-weight: bold;
+}
+
+.carte p strong {
+    font-weight: bold;
+}
+h1 {
+    text-align: center;
+}
